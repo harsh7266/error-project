@@ -1,14 +1,14 @@
 const notesContainer = document.querySelector(".notes-container");
-const createbtn = document.querySelector(".btn");
+const createBtn = document.querySelector(".btn");
 let notes = document.querySelectorAll(".input-box");
 
-createbtn.addEventListener("click", ()=>{
+    createBtn.addEventListener("click", function (){
     let inputBox = document.createElement("p");
-    let img =document.createElement("img");
-    inputBox.className="input-box";
+    const img = document.createElement("img");
+    inputBox.className = "input-box";
     inputBox.setAttribute("contenteditable","true");
-    img.src="images/delete.png";
+    img.src = "images/delete.png";
     notesContainer.appendChild(inputBox).appendChild(img); 
-});
+})
 
 
